@@ -23,6 +23,7 @@ pipeline {
 				sh 'ssh -T -i "JenkinsLab/temp-kp-ohio.pem" ec2-user@$HOSTNAME sudo yum install git -y'
 				sh 'ssh -T -i "JenkinsLab/temp-kp-ohio.pem" ec2-user@$HOSTNAME rm -rf JenkinsLab'
 				sh 'ssh -T -i "JenkinsLab/temp-kp-ohio.pem" ec2-user@$HOSTNAME git clone https://github.com/sisondarrenl/JenkinsLab.git'
+		    		sh 'ssh -T -i "JenkinsLab/temp-kp-ohio.pem" ec2-user@$HOSTNAME sudo rpm -ev ds_agent'
 				sh 'ssh -T -i "JenkinsLab/temp-kp-ohio.pem" ec2-user@$HOSTNAME sudo bash JenkinsLab/DeploymentScript/AgentDeploymentScript.sh'
             }
         }
