@@ -1,7 +1,7 @@
 pipeline {
     agent any 
 	environment {
-		HOSTNAME = 'ec2-18-216-97-87.us-east-2.compute.amazonaws.com'
+		HOSTNAME = 'ec2-3-133-83-73.us-east-2.compute.amazonaws.com'
     }
     stages {
         stage('Pull') { 
