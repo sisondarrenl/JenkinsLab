@@ -1,2 +1,2 @@
-This file contains the hostnames where the pipeline is ran:
-test
+ip-172-31-41-11.us-east-2.compute.internal
+ip-172-31-41-11.us-east-2.compute.internal
