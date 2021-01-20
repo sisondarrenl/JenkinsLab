@@ -1,0 +1,2 @@
+This file contains the hostnames where the pipeline is ran:
+test
